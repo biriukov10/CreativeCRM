@@ -1,0 +1,54 @@
+.ba-header {
+  background-color: $primaryColor;
+}
+
+.ba-logo {
+  display: block;
+  color: $yellow;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: 991px) {
+    margin-bottom: 50px;
+  }
+}
+
+.ba-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 1rem;
+    color: inherit;
+    font-size: 1.125rem;
+    transition: 0.3s;
+    border-left: 5px solid transparent;
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 1px;
+      bottom: 0;
+      left: 1rem;
+      right: 1rem;
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+    &:active {
+      background-color: #442a9d;
+      border-left: 5px solid $yellow;
+    }
+    &:hover,
+    &:focus {
+      background-color: lighten(#442a9d, 10);
+      border-left: 5px solid $yellow;
+    }
+  }
+}
