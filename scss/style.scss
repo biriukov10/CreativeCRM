@@ -1,9 +1,19 @@
 @import "layout.scss";
 @import "header.scss";
 
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .ba-menu__link {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
 }
 
 .btn {
@@ -14,5 +24,43 @@
 
 .ba-main-wrapper {
   display: flex;
+  flex-wrap: wrap;
   min-height: 100vh;
+}
+
+.ba-toolbar {
+  padding: 0 15px;
+  border: 2px solid #f8f8f8;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.ba-breadcrumbs {
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+  }
+
+  &__item + &__item {
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 1rem;
+      content: "\f105";
+      margin: 2px 0.75rem 0 1rem;
+      display: inline-block;
+    }
+  }
+}
+
+.ba-search {
+  margin-left: auto;
 }
