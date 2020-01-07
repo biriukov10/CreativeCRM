@@ -43,8 +43,8 @@
                     <ul class="ba-menu">
                         <li class="ba-menu__item ba-menu__item-user">
                             <div class="ba-user">
-                                <a href="#">
-                                    <img src="images/lauren.png" alt="Lauren">
+                                <a href="#" class="ba-user__link">
+                                    <img src="images/lauren.png" class="ba-user__photo" alt="Lauren">
                                     <span class="ba-user__name">Hello Lauren</span>
                                     <button id="showUserMenu">
                                         <i class="fas fa-angle-down"></i>
@@ -104,15 +104,18 @@
                     </nav>
 
                     <div class="ba-search">
+                        <button class="hidden-md" id="showSearch" aria-label="search">
+                            <i class="fas fa-search"></i>
+                        </button>
                         <form action="" class="ba-search-form">
-                            <input type="search" placeholder="search">
+                            <input type="search" placeholder="search" class="ba-search__input">
                             <button aria-label="search">
                                 <i class="fas fa-search"></i>
                             </button>
                         </form>
                     </div>
 
-                    <div class="ba-notification-wrapper">
+                    <div class="ba-notification-wrapper hidden-sm">
                         <button aria-label="new messages">
                             <i class="fas fa-envelope"></i>
                         </button>
@@ -122,9 +125,9 @@
                         </button>
                     </div>
 
-                    <div class="ba-user">
-                        <a href="#">
-                            <img src="images/lauren.png" alt="Lauren">
+                    <div class="ba-user hidden-sm">
+                        <a href="#" class="ba-user__link">
+                            <img src="images/lauren.png" class="ba-user__photo" alt="Lauren">
                             <span class="ba-user__name">Hello Lauren</span>
                             <button id="showUserMenu">
                                 <i class="fas fa-angle-down"></i>

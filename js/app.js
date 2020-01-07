@@ -22,5 +22,12 @@ $(document).ready(function () {
   });
 
 
+  //show search input
+
+  $('#showSearch').on('click', function () {
+
+    let searchForm = $('.ba-search-form');
+    searchForm.toggleClass('open');
+  });
 
 });
