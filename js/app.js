@@ -28,6 +28,23 @@ $(document).ready(function () {
 
     let searchForm = $('.ba-search-form');
     searchForm.toggleClass('open');
+
   });
+
+  // tabs
+
+  $('.ba-tabs__btn').on('click', function () {
+    $('.ba-tabs__btn.active').removeClass('active');
+    $('.ba-tabs-panel.active').removeClass('active');
+
+    const tabIndex = $(this).attr('data-tab');
+
+    $(this).addClass('active');
+    $('[data-tab-index=' + tabIndex + ']').addClass('active');
+  });
+
+
+
+
 
 });

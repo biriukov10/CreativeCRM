@@ -5,6 +5,10 @@ html,
 body {
   font-family: "Open Sans", sans-serif;
 }
+ul,
+li {
+  list-style: none;
+}
 
 .ba-menu__link {
   color: inherit;
@@ -120,5 +124,80 @@ button {
 
   &__photo {
     margin-right: 1rem;
+  }
+}
+
+.ba-tabs {
+  &-header {
+    background-color: #fff;
+    overflow: auto;
+  }
+
+  &-buttons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &.active {
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 4px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 2px;
+        background-color: #442a9d;
+      }
+    }
+  }
+
+  &-panel {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.ba-activity {
+  &-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.875rem 2rem 0.875rem 1rem;
+    margin-bottom: 1rem;
+  }
+  &__photo {
+    display: inline-block;
+    margin-right: 1rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    @media screen and (min-width: 991px) {
+      margin-right: 60px;
+    }
+  }
+  &__time {
+    margin-left: auto;
   }
 }

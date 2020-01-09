@@ -140,18 +140,70 @@
             <section class="ba-customers-profile" style="height: 200px; background-color: #c1c1c1;">
                 <h2>Profile</h2>
             </section>
-
-            <section class="ba-customers-tabs" style="height: 200px; background-color: #c1c1c1;">
-                <h2>Tabs</h2>
+            <!-- TABS START -->
+            <section class="ba-customers-tabs" style="background-color: #c1c1c1;">
+                <div class="ba-tabs">
+                    <div class="ba-tabs-header">
+                        <ul class="ba-tabs-buttons">
+                            <li>
+                                <button class="ba-tabs__btn active" data-tab='1'>Overview</button>
+                            </li>
+                            <li>
+                                <button class="ba-tabs__btn" data-tab='2'>orders</button>
+                            </li>
+                            <li>
+                                <button class="ba-tabs__btn" data-tab='3'>payments</button>
+                            </li>
+                            <li>
+                                <button class="ba-tabs__btn" data-tab='4'>interactions</button>
+                            </li>
+                            <li>
+                                <button class="ba-tabs__btn" data-tab='5'>customer feedback</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ba-tabs-content">
+                        <div class="ba-tabs-panel active" data-tab-index="1">
+                            <h3>Tab panel1</h3>
+                        </div>
+                        <div class="ba-tabs-panel" data-tab-index="2">
+                            <h3>Tab panel2</h3>
+                        </div>
+                        <div class="ba-tabs-panel" data-tab-index="3">
+                            <h3>Tab panel3</h3>
+                        </div>
+                        <div class="ba-tabs-panel" data-tab-index="4">
+                            <h3>Tab panel4</h3>
+                        </div>
+                        <div class="ba-tabs-panel" data-tab-index="5">
+                            <h3>Tab panel5</h3>
+                        </div>
+                    </div>
+                </div>
             </section>
-
+            <!-- TABS END -->
             <section class="ba-customers-activity" style="height: 200px; background-color: #c1c1c1;">
-                <h2>Activity</h2>
+                <h2 class="ba-sub-title">activity</h2>
+
+                <ul class="ba-activity-list">
+                    <li class="ba-activity-item">
+                        <img class="ba-activity__photo" src="images/lauren.png" alt="">
+                        <p class="ba-activity__info">
+                            Add new task <a href="#">Remind customer to complete payment</a> assigned to Lauren
+                        </p>
+                        <time class="ba-activity__time">
+                            Today at 4:24 PM
+                        </time>
+                    </li>
+                </ul>
             </section>
 
         </main>
 
     </div>
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
         </script>
